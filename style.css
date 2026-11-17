@@ -1,0 +1,132 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+:root {
+    --w: #E2E7DC;
+    --c: #366c8e;
+    --m: #d15c32;
+    --y: #f4bd48;
+    --k: #231F20;
+}
+
+body {
+    text-align: left;
+    font-size: 0.8em;
+    background-color: var(--k);
+    color: var(--w);
+    font-family: "Courier New", monospace;
+}
+
+.central {
+    text-align: center;
+    font-style: oblique;
+}
+
+h1 {
+    text-align: left;
+    color: var(--k);
+    background-color: var(--y);
+    font-size: 1em;
+}
+
+h1 em {
+    color: var(--k);
+    background-color: var(--y);
+    font-style: italic;
+}
+
+.firma {
+    text-align: right;
+    margin: 0;
+    background-color: var(--c);
+    color: var(--k);
+}
+
+mark, b {
+    background-color: var(--k);
+    color: var(--k);
+}
+
+.firma b {
+    color: var(--c);
+    background-color: var(--c);
+}
+
+.jho, .tho, .aho {
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.xho {
+    font-style: normal;
+    margin: 0;
+}
+
+.jho {
+    background-color: var(--m);
+    color: var(--y);
+}
+
+.iho {
+    font-style: normal;
+    text-align: justify;
+    background-color: var(--y);
+    color: var(--k);
+}
+
+.xho {
+    text-align: center;
+    background-color: var(--m);
+    color: var(--w);
+}
+
+.tho {
+    background-color: var(--y);
+    color: var(--m);
+}
+
+.aho {
+    background-color: var(--c);
+    color: var(--k);
+}
+
+img {
+    font-size: 0;
+}
+
+p {
+    font-weight: bold;
+}
+
+strong {
+    color: var(--w);
+    background-color: var(--k);
+}
+
+p strong {
+    background-color: var(--k);
+    color: var(--c);
+}
+
+div p strong {
+    font-style: normal;
+    font-weight: bold;
+}
+
+a, em {
+    color: var(--y);
+    background-color: var(--k);
+}
+
+a:visited {
+    color: var(--m);
+}
+
+li {
+    text-align: left;
+    font-weight: bold;
+    color: var(--m);
+    font-size: 7px;
+}

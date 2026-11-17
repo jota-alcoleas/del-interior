@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>lista</title>
+    <meta content="Poemas y textos de /del-interior, un blog de jxta jxta." name="description">
+    <meta content="#231F20" name="theme-color">
+    <title>/del-interior — poemas</title>
     <link href="/style.css" media="all" rel="stylesheet" type="text/css">
-    <link href="https://del-interior.neocities.org/imgs/ico-magenta-01.png" rel="icon" type="image/png">
+    <link href="/imgs/ico-magenta-01.png" rel="icon" type="image/png">
 </head>
 <body>
 
-<h1>
-    /del-interior
-    <i onclick="toggle('i')">A</i>
-    <i onclick="toggle('ii')">B</i>
-    <i onclick="toggle('iii')">C</i>
-    <i onclick="toggle('iv')">D</i>
-</h1>
+<header>
+    <h1>
+        /del-interior
+        <a href="#grupo-a">A</a>
+        <a href="#grupo-b">B</a>
+        <a href="#grupo-c">C</a>
+        <a href="#grupo-d">D</a>
+    </h1>
+</header>
 
-<p class="central" id="i" style="display:block">
-    <b>--</b>i <i onclick="toggle('bailan')"> bailan </i><b>--------------------------</b><br>
-    <b>-</b>ii <i onclick="toggle('habichuelas')">de habichuelas, magias y gigantes </i><b></b><br>
-</p>
-<p class="central" id="ii" style="display:block">
-    <b></b>iii <em onclick="toggle('bestia')"> bestia</em> <b>--------------------------</b><br>
-    <b>-</b>iv <em onclick="toggle('ripio')"> en el ripio </em><b>---------------------</b><br>
-</p>
-<p class="central" id="iii" style="display:block">
-    <b>--</b>v <i onclick="toggle('arte')"> arte poetica </i><b>--------------------</b><br>
-    <b>-</b>vi <i onclick="toggle('esquinas')"> 5 esquinas </i><b>----------------------</b><br>
-</p>
-<p class="central" id="iv" style="display:block">
-    <b></b>vii <i onclick="toggle('welcome')"> welcome </i><b>-------------------------</b><br>
-    <strong onclick="toggle('todo')"> (+) todo ese monton de equipaje -----</strong><br>
-</p>
+<main>
 
-<div id="bestia" style="display:block">
+<nav aria-label="Índice de poemas">
+    <p class="central" id="grupo-a">
+        <b aria-hidden="true">--</b>i <a href="#bailan"><i> bailan </i></a><b aria-hidden="true">--------------------------</b><br>
+        <b aria-hidden="true">-</b>ii <a href="#habichuelas"><i>de habichuelas, magias y gigantes </i></a><b aria-hidden="true"></b><br>
+    </p>
+    <p class="central" id="grupo-b">
+        <b aria-hidden="true"></b>iii <a href="#bestia"><em> bestia</em></a> <b aria-hidden="true">--------------------------</b><br>
+        <b aria-hidden="true">-</b>iv <a href="#ripio"><em> en el ripio </em></a><b aria-hidden="true">---------------------</b><br>
+    </p>
+    <p class="central" id="grupo-c">
+        <b aria-hidden="true">--</b>v <a href="#arte"><i> arte poetica </i></a><b aria-hidden="true">--------------------</b><br>
+        <b aria-hidden="true">-</b>vi <a href="#esquinas"><i> 5 esquinas </i></a><b aria-hidden="true">----------------------</b><br>
+    </p>
+    <p class="central" id="grupo-d">
+        <b aria-hidden="true"></b>vii <a href="#welcome"><i> welcome </i></a><b aria-hidden="true">-------------------------</b><br>
+        <a href="#todo"><strong> (+) todo ese monton de equipaje -----</strong></a><br>
+    </p>
+</nav>
 
-    <p class="xho" onclick="toggle('ii')">bestia</p>
+<article id="bestia">
+    <h2 class="xho">bestia</h2>
     <p>
         De nosotros mismos
         <br> bestia
@@ -48,10 +55,10 @@
         <br> y una mordida.
         <br>
     </p>
-</div>
-<div id="arte" style="display:block">
+</article>
 
-    <p class="xho" onclick="toggle('iii')">arte poetica</p>
+<article id="arte">
+    <h2 class="xho">arte poetica</h2>
     <p>
         Que el verso sea la nota al pie
         <br> a las preguntas de los tilos
@@ -73,10 +80,10 @@
         <br> Preparen su mejor salmuera.
         <br>
     </p>
+</article>
 
-</div>
-<div id="habichuelas" style="display:block">
-    <p class="xho" onclick="toggle('i')">de habichuelas, magias y gigantes</p>
+<article id="habichuelas">
+    <h2 class="xho">de habichuelas, magias y gigantes</h2>
     <p>
         ¿Querés que te cuente el cuento
         <br> de la habichuela?
@@ -97,9 +104,10 @@
         <br> de la habichuela?
         <br>
     </p>
-</div>
-<div id="bailan" style="display:block">
-    <p class="xho" onclick="toggle('i')">bailan</p>
+</article>
+
+<article id="bailan">
+    <h2 class="xho">bailan</h2>
     <p>
         Cortan el aire
         <br> las cenizas y el polen,
@@ -125,9 +133,10 @@
         <br> los rastros para la vuelta.
         <br> El bosque está en paz.
     </p>
-</div>
-<div id="ripio" style="display:block">
-    <p class="xho" onclick="toggle('ii')">en el ripio</p>
+</article>
+
+<article id="ripio">
+    <h2 class="xho">en el ripio</h2>
     <p>
         En el barrio nace el fuego,
         <br> no futuro.
@@ -150,9 +159,10 @@
         <br>
         <br> del no futuro y del ripio.
     </p>
-</div>
-<div id="esquinas" style="display:block">
-    <p class="xho" onclick="toggle('iii')">5 esquinas</p>
+</article>
+
+<article id="esquinas">
+    <h2 class="xho">5 esquinas</h2>
     <p>
         Si Buenos Aires quiere
         <br> la invito un trago
@@ -178,9 +188,10 @@
         <br> que mudó hace años
         <br> pa tropezón de giles
     </p>
-</div>
-<div id="welcome" style="display:block">
-    <p class="xho" onclick="toggle('iv')">welcome</p>
+</article>
+
+<article id="welcome">
+    <h2 class="xho">welcome</h2>
     <p>
         Desde el fondo de ti, y arrodillado,
         <br> un viejo triste, como yo, nos mira.
@@ -205,9 +216,10 @@
         <br> me limpio los pies en tréboles
         <br> y dientes de león.
     </p>
-</div>
-<div id="todo" style="display:block">
-    <p class="xho" onclick="toggle('iv')">todo ese monton de equipaje</p>
+</article>
+
+<article id="todo">
+    <h2 class="xho">todo ese monton de equipaje</h2>
     <p class="central"><strong> Por si vienen
         <br> (la abuela, el diezmo por 1 rumor)
         <br> 1 corazón más grande que la norma
@@ -231,45 +243,11 @@
         <br> (por cimiento)
     </strong>
     </p>
-</div>
+</article>
 
-<p class="firma">jxta jxta.</p>
+</main>
+
+<footer class="firma">jxta jxta.</footer>
 
 </body>
 </html>
-
-<SCRIPT>
-    let songs = [
-        'bestia',
-        'habichuelas',
-        'arte',
-        'bailan',
-        'welcome',
-        'esquinas',
-        'todo',
-        'ripio',
-        'i', 'ii', 'iii', 'iv'
-    ]
-
-    function toggle(id) {
-        return
-        // if (id[0] !== 'i') {
-        for (let i = 0; i < songs.length; i++) {
-            let name = songs[i]
-            if (name !== id) {
-                let song = document.getElementById(name);
-                song.style.display = 'none';
-            }
-        }
-        // }
-
-        let x = document.getElementById(id);
-
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-</SCRIPT>
-

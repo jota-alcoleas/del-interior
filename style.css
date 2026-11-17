@@ -1,21 +1,18 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
 :root {
     --w: #E2E7DC;
     --c: #366c8e;
-    --m: #d15c32;
+    --m: #a83e1b;
     --y: #f4bd48;
     --k: #231F20;
 }
 
 body {
     text-align: left;
-    font-size: 0.8em;
+    font-size: 1rem;
     background-color: var(--k);
     color: var(--w);
     font-family: "Courier New", monospace;
+    overflow-wrap: anywhere;
 }
 
 .central {
@@ -30,17 +27,19 @@ h1 {
     font-size: 1em;
 }
 
-h1 em {
+h1 a {
     color: var(--k);
     background-color: var(--y);
     font-style: italic;
+    text-decoration: none;
 }
 
 .firma {
     text-align: right;
     margin: 0;
     background-color: var(--c);
-    color: var(--k);
+    color: #ffffff;
+    font-weight: bold;
 }
 
 mark, b {
@@ -48,52 +47,14 @@ mark, b {
     color: var(--k);
 }
 
-.firma b {
-    color: var(--c);
-    background-color: var(--c);
-}
-
-.jho, .tho, .aho {
-    font-style: normal;
-    font-size: 1.5em;
-    margin: 0;
-}
-
 .xho {
     font-style: normal;
+    font-size: 1em;
+    font-weight: bold;
     margin: 0;
-}
-
-.jho {
-    background-color: var(--m);
-    color: var(--y);
-}
-
-.iho {
-    font-style: normal;
-    text-align: justify;
-    background-color: var(--y);
-    color: var(--k);
-}
-
-.xho {
     text-align: center;
     background-color: var(--m);
     color: var(--w);
-}
-
-.tho {
-    background-color: var(--y);
-    color: var(--m);
-}
-
-.aho {
-    background-color: var(--c);
-    color: var(--k);
-}
-
-img {
-    font-size: 0;
 }
 
 p {
@@ -107,10 +68,10 @@ strong {
 
 p strong {
     background-color: var(--k);
-    color: var(--c);
+    color: var(--y);
 }
 
-div p strong {
+article p strong {
     font-style: normal;
     font-weight: bold;
 }
@@ -118,15 +79,25 @@ div p strong {
 a, em {
     color: var(--y);
     background-color: var(--k);
+    text-decoration: none;
 }
 
-a:visited {
-    color: var(--m);
+.central i {
+    color: var(--w);
 }
 
-li {
-    text-align: left;
-    font-weight: bold;
-    color: var(--m);
-    font-size: 7px;
+a:hover {
+    text-decoration: underline;
+}
+
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 0.5rem;
+        font-size: 0.95rem;
+    }
 }

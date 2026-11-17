@@ -86,10 +86,6 @@ a, em {
     color: var(--w);
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 :focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 2px;

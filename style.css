@@ -1,0 +1,97 @@
+:root {
+    --w: #E2E7DC;
+    --c: #366c8e;
+    --m: #a83e1b;
+    --y: #f4bd48;
+    --k: #231F20;
+}
+
+body {
+    text-align: left;
+    font-size: 1rem;
+    background-color: var(--k);
+    color: var(--w);
+    font-family: "Courier New", monospace;
+    overflow-wrap: anywhere;
+}
+
+.central {
+    text-align: center;
+    font-style: oblique;
+}
+
+h1 {
+    text-align: left;
+    color: var(--k);
+    background-color: var(--y);
+    font-size: 1em;
+}
+
+h1 a {
+    color: var(--k);
+    background-color: var(--y);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.firma {
+    text-align: right;
+    margin: 0;
+    background-color: var(--c);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+mark, b {
+    background-color: var(--k);
+    color: var(--k);
+}
+
+.xho {
+    font-style: normal;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    background-color: var(--m);
+    color: var(--w);
+}
+
+p {
+    font-weight: bold;
+}
+
+strong {
+    color: var(--c);
+    background-color: var(--k);
+}
+
+a, em {
+    color: var(--y);
+    background-color: var(--k);
+    text-decoration: none;
+}
+
+.central i {
+    color: var(--w);
+}
+
+a:hover i,
+a:hover em,
+a:hover strong,
+a:hover {
+    color: var(--m);
+}
+
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 0.5rem;
+        font-size: 0.95rem;
+    }
+}
+

@@ -62,18 +62,8 @@ p {
 }
 
 strong {
-    color: var(--w);
+    color: var(--c);
     background-color: var(--k);
-}
-
-p strong {
-    background-color: var(--k);
-    color: var(--y);
-}
-
-article p strong {
-    font-style: normal;
-    font-weight: bold;
 }
 
 a, em {
@@ -84,6 +74,13 @@ a, em {
 
 .central i {
     color: var(--w);
+}
+
+a:hover i,
+a:hover em,
+a:hover strong,
+a:hover {
+    color: var(--m);
 }
 
 :focus-visible {
@@ -97,3 +94,4 @@ a, em {
         font-size: 0.95rem;
     }
 }
+

@@ -42,9 +42,14 @@ h1 a {
     font-weight: bold;
 }
 
-mark, b {
-    background-color: var(--k);
+mark {
+    background-color: var(--y);
     color: var(--k);
+}
+
+b {
+    background-color: transparent;
+    color: var(--c);
 }
 
 .xho {
@@ -83,9 +88,27 @@ a:hover {
     color: var(--m);
 }
 
+a.skip {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    z-index: 1;
+    padding: 0.25rem 0.5rem;
+    color: var(--k);
+    background-color: var(--y);
+}
+
+a.skip:focus {
+    left: 0;
+}
+
 :focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 2px;
+}
+
+a.skip:focus-visible {
+    outline-color: var(--y);
 }
 
 @media (max-width: 480px) {
